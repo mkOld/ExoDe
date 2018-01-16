@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.oc.exo.exode.MainActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center">
+
+        <LinearLayout
+            android:id="@+id/ll6SlidedDice"
+            android:layout_width="250dp"
+            android:layout_height="100dp"
+            android:orientation="horizontal"
+            android:background="@color/colorPrimary">
+
+            <ImageView
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:src="@drawable/de1"
+                android:layout_gravity="center"
+                android:layout_marginLeft="20dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/slided_dice_6"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:layout_marginLeft="50dp"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll20SlidedDice"
+            android:layout_width="250dp"
+            android:layout_height="100dp"
+            android:orientation="horizontal"
+            android:layout_below="@id/ll6SlidedDice"
+            android:background="@color/colorAccent">
+
+            <ImageView
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:src="@drawable/de2"
+                android:layout_gravity="center"
+                android:layout_marginLeft="20dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/slided_dice_20"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:layout_marginLeft="50dp"/>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</android.support.constraint.ConstraintLayout>
